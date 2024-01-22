@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+    <h2 class="sintaxis">Sintaxis</h2>
+    <br>
+    <h3 class="notacionpunto">Notación punto</h3>
+    <br>
+    <p class="notacion">
+      En JavaScript, la notación de punto se utiliza para 
+      acceder a las propiedades de un objeto y para llamar 
+      a métodos. Aquí hay ejemplos:
+    </p>
+    <br>
+    <h5 class="uno">Acceder a Propiedades:</h5>
+    <script>
+        let persona = {
+          nombre: "Aitor",
+          edad: 25
+        };
+      
+        console.log(persona.nombre);
+    </script>
+    <br>
+    <h5 class="dos">Llamar a Métodos:</h5>
+    <script>
+        let mensaje = "Hola, Mundo";
+
+        console.log(mensaje.length); 
+    </script>
+    <br>
+    <h3 class="typeof">Typeof</h3>
+    <br>
+    <p class="tres">
+        El operador typeof se utiliza para obtener el 
+        tipo de un valor en JavaScript. Aquí tienes ejemplos:
+    </p>
+    <br>
+    <script>
+        let x = 10;
+        let y = "Hola, Mundo";
+    
+        console.log(typeof x); // Devuelve "number"
+        console.log(typeof y); // Devuelve "string"
+    </script>
+    <br>
+    <h3 class="concatenación">Plantillas Literales vs Concatenación:</h3>
+    <br>
+    <h4 class="ejemplo">Ejemplos:</h4>
+    <br>
+    <script>
+        let nombre = "Juan";
+        let edad = 30;
+      
+        // Concatenación
+        let mensajeConcat = "Hola, me llamo " + nombre + " y tengo " + edad + " años.";
+        console.log(mensajeConcat);
+      
+        // Plantillas Literales
+        let mensajeLiteral = `Hola, me llamo ${nombre} y tengo ${edad} años.`;
+        console.log(mensajeLiteral);
+      </script>
+    <br>
+    <p class="cuatro">“Las plantillas literales (template literals) 
+        permiten incrustar expresiones dentro de cadenas 
+        de una manera más legible y con un formato más limpio.</p>
+    <br>
+    <h3 class="escape">Caracteres de Escape:</h3>
+    <br>
+    <p class="cinco">Los caracteres de escape se utilizan para r
+        epresentar caracteres especiales en una cadena. 
+        Algunos ejemplos comunes son:
+    </p>
+    <br>
+    <h4 class="nueva_linea">Nueva línea:</h4>
+    <br>
+    <script>
+        let multilinea = "Hola,\nMundo!";
+         console.log(multilinea);
+    </script>
+    <br>
+    <h4 class="tabulación:">Tabulación:</h4>
+    <br>
+    <script>
+        let conTabulacion = "Texto con\ttabulación.";
+         console.log(conTabulacion);
+    </script>
+    <br>
+     <h4 class="comiias">Comillas dentro de una cadena:</h4>
+     <br>
+     <script>
+        let conComillas = 'Texto con comillas simples (\') y comillas dobles (").';
+         console.log(conComillas);
+     </script>
+     <br>
+     <h4 class="barra">Barra invertida literal (\):</h4>
+     <br>
+     <script>
+        let conBarraInvertida = "C:\\Directorio\\Archivo.txt";
+        console.log(conBarraInvertida);
+     </script>
+
+
+
+</body>
+</html>
