@@ -1,10 +1,72 @@
+/*linea css original 19*/
 
+:root{
+    --primary-font-color1: #ffffff; 
+    --primary-font-color2: #007bff;
+    --primary-font-color3: red;
+}
+.background-mainjhonny{
+    height: 100vh;
+    background: linear-gradient(rgba(20,20,20, .5),rgba(20,20,20, .5)),url(./img/concepto-recursos-humanos-mano_23-2150389097.gpg);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 89%, 51% 100%, 0 89%);
+    clip-path: polygon(0 0, 100% 0, 100% 89%, 51% 100%, 0 89%);
 
+}
 
+.background-mainjhonny, .services-class{
+    max-width: 100%;
+    background-position: center center;
+    background-repeat:  no-repeat;
+    background-attachment: fixed;
+    background-size:  cover;
+    color:var(--primary-font-color1);
+}
+
+.background-mainjhonny h1{
+    font-size: 5.5rem;
+}
+
+.background-mainjhonny .main { 
+    display: table; 
+    width: 100%;
+    height: 82vh;
+    text-align: center;
+    /*
+    display: flex; 
+    width: 50%; 
+    height: 200px; 
+    margin: auto; 
+    */
+} 
+
+.background-mainjhonny .main .main-title,.background-mainjhonny .main p { 
+    display: table-cell;
+    vertical-align: middle;
+    /*margin: auto;  Important 
+    text-align: center;  */
+}
+
+.main-link{
+    font-size: 44px;
+    color: var(--primary-font-color1);
+}
+.main-link:hover{
+    color:var(--primary-font-color3);
+}
+.typewrite
+{
+    color: rgb(171, 232, 208);
+}
    
-.secion2{
+
+#sabermas {
     
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.intro{ 
+    background-color: bisque; 
+    font-size: large;
+    width: 80%;
 }
