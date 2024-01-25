@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
 /*linea css original 19*/
 
 :root{
@@ -58,15 +64,109 @@
     color: rgb(171, 232, 208);
 }
    
+/**********************************************************************************************************************/      
+.miMain{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-#sabermas {
+
+.intro{ 
+    
+    background-color: bisque; 
+    font-size: large;
+    width: 90%;
+}
+/****************************************************/
+#acceso { 
+   margin-top: 5rem;
+    background-color: #F7F7F7;
+    box-shadow: 0rem -0.1rem 0rem rgb(233, 228, 228);
+    max-width: 90%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo_porfolio{ 
+    
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 5rem;
+}
+
+.h2_titulo{font-size: 1.2rem;
+}
+
+.linea_porfolio{opacity: 20%;}
+/*************************************css para la linea y tutulo, ademas de sombreado*/
+
+.lbotones {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+#byid{ 
+   margin-top: 5rem;
     
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.intro{ 
-    background-color: bisque; 
-    font-size: large;
-    width: 80%;
+
+.encabezadoarticulos{
+    color: rgb(122, 122, 217);
+    font-size: 2rem;
+    
+}
+ 
+
+    
+
+#miElemento { 
+  
+    background-color: #908383;
+    min-width: 100%;
+
+}
+
+.contenedor1{
+    gap: 3rem;
+    margin-top: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.pcontenedor1 {
+   
+    max-width: 30%;
+}
+.ejemplocodigobyid {
+    color: #ffffff;
+    max-width: 60%;
+    background-color: black;
+}
+
+.codigo {
+    color: red;
+}
+
+/*****************aqui empieza bytagname***********/
+
+#bytagname {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ejemplocodigobytagname {
+    border: 0.5rem solid red;
+   min-width: 100%;
+    background-color: #908383;
 }

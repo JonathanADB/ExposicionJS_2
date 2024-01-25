@@ -9,6 +9,8 @@
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/jhonny.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script defer src="js/jhonny.js" ></script>
+    
     <title>Metodos de seleccion de elementos</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
@@ -17,7 +19,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <script src="js/main.js"></script>
+    <script  src="js/main.js"></script>
 
   </head>
   
@@ -25,7 +27,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
         <div class="container">
-                    <a class="navbar-brand js-scroll-trigger" href="#page-top">DOM</a>
+                    <a class="navbar-brand js-scroll-trigger" href="#page-top">inicio</a>
                     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -54,7 +56,7 @@
         </div>
     </header>
 
-    <section class="p-3 m-0 border-0 bd-example m-0 border-0">
+    <section id="sabermas" class="p-3 m-0 border-0 bd-example m-0 border-0">
        <div id="carouselExampleDark" class="carousel carousel-dark slide">
                                 
                                 <div class="carousel-indicators">
@@ -122,30 +124,137 @@
 
 
 
-    <section id="sabermas">
-        <div class="intro">
-            <p>En el vasto mundo del desarrollo web, la manipulación dinámica de la estructura HTML de una página es esencial para crear experiencias interactivas y fluidas. El Document Object Model (DOM) sirve como la representación en memoria de la estructura de un documento HTML, y para interactuar con él, es crucial dominar los métodos de selección de elementos. Estos métodos, basados en JavaScript, permiten a los desarrolladores acceder y manipular de manera eficiente los diversos componentes de una página web.
+    <main class="miMain">
+      
+        <article class="intro">
+                                        <p>En el vasto mundo del desarrollo web, la manipulación dinámica de la estructura HTML de una página es esencial para crear experiencias interactivas y fluidas. El Document Object Model (DOM) sirve como la representación en memoria de la estructura de un documento HTML, y para interactuar con él, es crucial dominar los métodos de selección de elementos. Estos métodos, basados en JavaScript, permiten a los desarrolladores acceder y manipular de manera eficiente los diversos componentes de una página web.
 
-                Desde la selección de elementos por su identificador único hasta la aplicación de selectores CSS avanzados, este conjunto de técnicas ofrece flexibilidad y versatilidad para abordar diversas necesidades en el desarrollo web. En este contexto, exploraremos algunos de los métodos fundamentales, como getElementById, getElementsByClassName, y querySelector, que permiten a los desarrolladores no solo identificar elementos específicos, sino también trabajar con colecciones de elementos.</p>
+                                            Desde la selección de elementos por su identificador único hasta la aplicación de selectores CSS avanzados, este conjunto de técnicas ofrece flexibilidad y versatilidad para abordar diversas necesidades en el desarrollo web. En este contexto, exploraremos algunos de los métodos fundamentales, como getElementById, getElementsByClassName, y querySelector, que permiten a los desarrolladores no solo identificar elementos específicos, sino también trabajar con colecciones de elementos.</p>
+                                            
 
-        </div>
-   </section>
+        </article>
+                            
+        
 
-   <br><br><br><br><br>
+        <section id="acceso"> 
+           
+            <div class="titulo_porfolio">
+                <div class="linea_porfolio">
+                    <img width="500" height="40" src="https://img.icons8.com/office/80/horizontal-line.png" alt="horizontal-line"/>
+                </div>
+                <div class="h2_titulo">
+                    <h2><strong>Metodos de acceso</strong></h2>
+                </div>
+                    <div class="linea_porfolio">
+                        <img width="500" height="40" src="https://img.icons8.com/office/80/horizontal-line.png" alt="horizontal-line"/>
+                    </div>
+            </div>         
+            
+                                   
 
-    <div id="acceso">  
-        <h2>Introducción a Métodos de Acceso en Desarrollo Web:</h2>
-        <p>Explorando las Puertas del DOM</p>
-        <ul >
-            <li class="list-group-item">getElementById()</li>
-            <li class="list-group-item">getElementsByTagName()</li>
-            <li class="list-group-item">querySelector()</li>
-            <li class="list-group-item">querySelectorAll()</li>
-        </ul>
-    </div>   
+                        <div class="lbotones">
+                                    <a href="#byid"><button type="button" class="btn btn-secondary">getElementById()</button><a>
+                                    <a href="#bytagname"><button type="button" class="btn btn-secondary">getElementsByTagName()</button></a>
+                                    <a href="#selector"> <button type="button" class="btn btn-secondary">querySelector()</button></a>
+                                    <a href="#selectorall"><button type="button" class="btn btn-secondary">querySelectorAll()</button></a> 
+                        </div>
+                           
+                              
+                              
+                           
+
+                            <article id="byid">
+                                            <p class="encabezadoarticulos">La función getElementById es un método en JavaScript que se utiliza para acceder a un elemento HTML específico en una página web mediante su identificador único (ID). Cada elemento HTML puede tener un atributo de identificación único, que se define en el código HTML y luego se puede utilizar en JavaScript para hacer referencia a ese elemento de manera única.<br>En el código HTML, puedes asignar un ID único a un elemento utilizando el atributo id. Por ejemplo</p>
+
+                                      
+                                        <div id="miElemento">Este es un elemento con identificador</div>
+                                           <div class="contenedor1">
+                                               <div class="pcontenedor1">
+                                                <p>En tu código JavaScript, puedes utilizar la función getElementById para obtener una  referencia a ese elemento utilizando su ID. Aquí hay un ejemplo </p></div> 
+
+                                                
+                                                    
+                                                <div class="ejemplocodigobyid">
+                                                        <p>// Obtener el elemento con el ID "miElemento"
+                                                        <br><span class="codigo">let elemento = document.getElementById("miElemento");</span>
+                                                        <br> // Hacer algo con el elemento, por ejemplo, cambiar su contenido
+                                                        <br><span class="codigo">elemento.innerHTML = "¡Hola, mundo!";</span>
+                                                        <br> <br>En este ejemplo, la variable elemento ahora contiene una referencia al elemento HTML que tiene el ID "miElemento". Luego, puedes realizar operaciones, como cambiar su contenido o estilo, mediante JavaScript.</p> 
+                                                    </div>
 
 
-    
-    <!-- End Example Code -->
+                                                    <div class="pcontenedor1">
+                                                        <p>Es importante destacar que `getElementById` devuelve null si no encuentra ningún elemento con el ID proporcionado. Por lo tanto, es una buena práctica verificar si el elemento existe antes de intentar manipularlo. Por ejemplo: </p></div>        
+                                                   
+                                                        <div class="ejemplocodigobyid">
+                                                           <p><br><span class="codigo">let elemento = document.getElementById("miElemento");</span>
+                                                            <br>
+                                                            <br><span class="codigo">if (elemento !== null) {</span>
+                                                              <br> // El elemento existe, hacer algo con él
+                                                               <br> <span class="codigo"> elemento.innerHTML = "¡Hola, mundo!";</span>
+                                                             <br> <span class="codigo"> } else {</span>
+                                                              <br> <span class="codigo">  console.error("No se encontró ningún elemento con el ID 'miElemento'.");
+                                                                    } </span>
+
+                                                           
+                                                        </div>
+                                                   
+                                           </div>
+                                        </div>
+                            </article>
+       
+
+                            
+                            
+                            
+                            
+                            
+                            <article id="bytagname">
+                                <p class="encabezadoarticulos">La función getElementsByTagName es otro método de JavaScript que se utiliza para acceder a elementos HTML en una página web, pero en lugar de buscar por ID, se basa en el nombre de la etiqueta HTML. Este método devuelve una colección (objeto NodeList) de todos los elementos con el nombre de la etiqueta especificada.
+
+                                   Aquí hay una explicación básica de cómo funciona getElementsByTagName:
+                                   Puedes utilizar la función getElementsByTagName para obtener una colección de elementos que tienen una etiqueta HTML específica. Por ejemplo, si quieres obtener todos los elementos  (párrafos) en la página, puedes hacer lo siguiente:</p>
+
+                                   <div class="contenedor1">
+                                            
+                                               
+                                            
+
+                                                    <div class="ejemplocodigobytagname">
+                                                        <p>En este ejemplo, el contenido de cada párrafo se actualiza en función de su posición en la colección
+                                                            <br>// Obtener todos los elementos "p" en la página
+                                                        <br><span class="codigo">let parrafos = document.getElementsByTagName("p");</span>
+                                                        <br> // Ahora, la variable parrafos contiene una colección de todos los elementos "p" en el documento.
+                                                        <br> //Iterar a través de la colección de párrafos
+                                                            <br><span class="codigo">for (var i = 0; i < parrafos.length; i++) { </span>
+                                                                <br> //Hacer algo con cada párrafo, por ejemplo, cambiar su contenido
+                                                                <br><span class="codigo">parrafos[i].innerHTML = "Este es un nuevo contenido para el párrafo " + (i + 1);
+                                                                } </span>
+                                                    
+                                                            </p> 
+                                                    </div>
+                                            
+                                    </div>        
+                                    
+                                </article>
+
+                            
+                            
+                            
+                            <article id="selector">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta perspiciatis natus ex iste nemo harum architecto nihil? Hic similique nam quod recusandae, quam delectus modi velit magni doloremque, neque atque.</p>
+                            </article>
+
+                           
+                           
+                            <section id="selectorall">
+                                <div></div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam exercitationem reprehenderit voluptatibus numquam eligendi, vel fugiat. Consequuntur quod corporis soluta, adipisci, in odit nisi dolore voluptatem earum sit reiciendis architecto.</p>
+                            </section>
+
+
+
+                        </section>
+    </main>
   </body>
 </html>
