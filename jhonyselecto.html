@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejemplo de uso de querySelector</title>
+
+    <style>
+        /* Estilo para resaltar tareas completadas */
+        .completada {
+          text-decoration: line-through;
+          color: #808080;
+        }
+    
+        /* Estilo para cambiar el color del texto de las nuevas tareas */
+        .colorido {
+          color: green;
+        }
+    
+        /* Estilo para la palomita */
+        .palomita {
+          color: green;
+          font-weight: bold;
+          margin-left: 5px;
+          display: none; /* Inicialmente oculto */
+        }
+
+        .frameAll{
+            padding-top: 50rem;
+        }
+
+        .rojo {
+      color: red;
+    }
+      </style>
+    </head>
+    <body>
+    
+      <div id="app">
+        <h1>Lista de Tareas</h1>
+        <input type="text" id="nuevaTarea" placeholder="Nueva tarea">
+        <button id="agregarTarea">Agregar</button>
+    
+        <ul id="listaTareas">
+          <li>
+            <input type="checkbox" class="tareaCheckbox">
+            Terminar la pista 1
+            <span class="palomita">&#10004;</span>
+          </li>
+          <li>
+            <input type="checkbox" class="tareaCheckbox">
+            Estudiar para el examen
+            <span class="palomita">&#10004;</span>
+          </li>
+          <li>
+            <input type="checkbox" class="tareaCheckbox">
+            Actualizar LinkedIn
+            <span class="palomita">&#10004;</span>
+          </li>
+        </ul>
+      </div>
+
+
+
+      <div class="frameAll">
+        <h2>Ejemplo codigo querySelectorAll</h2>
+        <ul id="miLista">
+            <li>Elemento 1</li>
+            <li class="rojo">Elemento 2</li>
+            <li>Elemento 3</li>
+            <li class="rojo">Elemento 4</li>
+          </ul>
+      </div>
+    
+      <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          // Seleccionar elementos del DOM
+          let inputNuevaTarea = document.querySelector('#nuevaTarea');
+          let botonAgregarTarea = document.querySelector('#agregarTarea');
+          let listaTareas = document.querySelector('#listaTareas');
+    
+          // Función para agregar una nueva tarea
+          function agregarTarea() {
+            let nuevaTareaTexto = inputNuevaTarea.value;
+    
+            if (nuevaTareaTexto.trim() !== '') {
+              let nuevaTarea = document.createElement('li');
+              
+              // Agregar checkbox a la tarea
+              let checkbox = document.createElement('input');
+              checkbox.type = 'checkbox';
+              checkbox.classList.add('tareaCheckbox');
+              nuevaTarea.appendChild(checkbox);
+    
+              // Agregar el texto de la tarea
+              nuevaTarea.innerHTML += nuevaTareaTexto;
+    
+              // Cambiar el color del texto de las nuevas tareas
+              nuevaTarea.classList.add('colorido');
+    
+              // Agregar evento para marcar tarea como completada al hacer clic en el checkbox
+              checkbox.addEventListener('change', function () {
+                if (this.checked) {
+                  nuevaTarea.classList.add('completada');
+                  nuevaTarea.querySelector('.palomita').style.display = 'inline'; // Mostrar la palomita
+                } else {
+                  nuevaTarea.classList.remove('completada');
+                  nuevaTarea.querySelector('.palomita').style.display = 'none'; // Ocultar la palomita
+                }
+              });
+    
+              // Agregar la palomita para indicar la tarea completada
+              let palomita = document.createElement('span');
+              palomita.innerHTML = '&#10004;';
+              palomita.classList.add('palomita');
+              nuevaTarea.appendChild(palomita);
+    
+              // Agregar la nueva tarea a la lista
+              listaTareas.appendChild(nuevaTarea);
+    
+              // Limpiar el campo de entrada
+              inputNuevaTarea.value = '';
+            }
+          }
+    
+          // Agregar evento al botón para llamar a la función agregarTarea
+          botonAgregarTarea.addEventListener('click', agregarTarea);
+    
+          // Agregar evento al campo de entrada para agregar tarea al presionar Enter
+          inputNuevaTarea.addEventListener('keyup', function (event) {
+            if (event.key === 'Enter') {
+              agregarTarea();
+            }
+          });
+        });
+
+
+
+                // Seleccionar todos los elementos <li> con la clase "rojo"
+            let elementosRojo = document.querySelectorAll('li.rojo');
+
+                // Iterar sobre la NodeList y aplicar cambios
+                elementosRojo.forEach(function(elemento) {
+                elemento.textContent += ' (modificado)';
+                });
+      </script>
+
+
+</body>
+</html>
