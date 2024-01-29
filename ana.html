@@ -35,13 +35,23 @@
         <section class="anasintax">
             <div class="sintaxis">
                 <h1>Sintaxis</h1>
+                <br>
+                <h3>Notación punto</h3>
+                <h3>Typeof</h3>
+                <h3>Plantillas Literales vs Concatenación</h3>
+                <h3>Caracteres de Escape</h3>
             </div>
             <div class="notacion">
                 <h3>Notación punto</h3>
                 <p>
                     En JavaScript, la notación de punto se utiliza para 
                     acceder a las propiedades de un objeto y para llamar 
-                    a métodos. Aquí hay ejemplos:
+                    a métodos. 
+                </p>
+                <p>
+                    la notación de punto es una forma común y sencilla de 
+                    trabajar con objetos en JavaScript, permitiendo acceder 
+                    y manipular sus propiedades y métodos. 
                 </p>
                   
                 <h5>Acceder a Propiedades:</h5>
@@ -66,7 +76,15 @@
                 <h3>Typeof</h3>
                 <p>
                     El operador typeof se utiliza para obtener el 
-                    tipo de un valor en JavaScript. Aquí tienes ejemplos:
+                    tipo de un valor en JavaScript.
+                </p>
+                <p>
+                    Es importante destacar que typeof null devuelve "object",
+                     lo cual es un error conocido en JavaScript y no se considera 
+                     un comportamiento correcto. También, typeof 
+                     es una herramienta útil, pero puede tener algunas limitaciones, 
+                     especialmente cuando se trata de distinguir entre diferentes tipos
+                     de objetos o detectar nulos y funciones de manera precisa.
                 </p>
   
                 <script>
@@ -79,12 +97,37 @@
             </div>
 
             <div class="concatenacion">
-                <h3>Plantillas Literales vs Concatenación:</h3>
                 
-                <h4>Ejemplos:</h4>
+                <h3>Plantillas Literales vs Concatenación:</h3>
+                <br>
+                <p>Las plantillas literales (template literals) 
+                    permiten incrustar expresiones dentro de cadenas 
+                    de una manera más legible y con un formato más limpio.
+                </p>
+                <p>
+                    La concatenación es la forma más tradicional de 
+                    combinar strings. Se realiza utilizando el 
+                    operador + para unir cadenas de texto. 
+                </p>
+                <h4>Ventajas de las Plantillas Literales:</h4>
+                <p><strong>Legibilidad: </strong>Las plantillas literales suelen 
+                    hacer que el código sea más legible, especialmente 
+                    cuando se trabaja con cadenas largas o varias variables.
+                </p>
+                <p><strong>Multilínea:</strong> Puedes escribir cadenas en varias 
+                    líneas sin necesidad de concatenar manualmente los saltos de línea. 
+                </p>
+                <p><strong>Interpolación: </strong>La interpolación de variables es más 
+                    sencilla y directa, ya que se realiza utilizando ${} dentro de la cadena.
+                </p>
+                <p><strong>Expresiones: </strong>Puedes incluir expresiones dentro de las 
+                    plantillas literales, lo que facilita la combinación de texto y 
+                    valores calculados.
+                </p>
+
                 
                 <script>
-                    let nombre = "Juan";
+                    let nombre = "Ainhoa";
                     let edad = 30;
                   
                     // Concatenación
@@ -95,17 +138,14 @@
                     let mensajeLiteral = `Hola, me llamo ${nombre} y tengo ${edad} años.`;
                     console.log(mensajeLiteral);
                   </script>
-                <br>
-                <p>“Las plantillas literales (template literals) 
-                    permiten incrustar expresiones dentro de cadenas 
-                    de una manera más legible y con un formato más limpio.</p>
+               
             </div>
 
             <div class="escape">
-                <h3>Caracteres de Escape:</h3>
+                <h3>Caracteres de Escape</h3>
    
-                <p>Los caracteres de escape se utilizan para r
-                   epresentar caracteres especiales en una cadena. 
+                <p>Los caracteres de escape se utilizan para 
+                    representar caracteres especiales en una cadena. 
                    Algunos ejemplos comunes son:
                 </p>
     
