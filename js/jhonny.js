@@ -1,24 +1,14 @@
 "use strict"
 
-function verificarRespuesta() {
-   // Obtén la respuesta seleccionada
-   const respuestaSeleccionada = document.querySelector('input[name="respuesta"]:checked');
-   
-   // Verifica si la respuesta correcta está seleccionada
-   if (respuestaSeleccionada && respuestaSeleccionada.value === "opcionA") {
-       alert('¡Bien!');
-       // Aquí puedes agregar el código para cambiar el texto del elemento por su ID
-       const miElemento = document.getElementById("miId");
-       miElemento.textContent = "¡Hola, mundo!";
-   } else {
-       alert('Inténtalo de nuevo.');
-   }
-}
-
-//ejemplo 1 byID
 
 
-//
+/* //ejemplo 1 byID
+// Obtener el elemento con el ID "miElemento"
+let elemento = document.getElementById("miElemento");
+// Hacer algo con el elemento, por ejemplo, cambiar su contenido
+elemento.innerHTML = "¡Hola, mundo!"; */
+
+
 
 
 //ejemplo 2 byTagname
