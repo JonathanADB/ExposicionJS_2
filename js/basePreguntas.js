@@ -34,4 +34,9 @@ let baseDePreguntas = [
     respuesta: "nos devuelve el contenido de texto de un elemento HTML",
     distractores: ["Añade lo que quieras", "Omite el texto correspondiente", "Modifica el texto seleccionado"],
   },
+  {
+    pregunta: "¿Cual metodo se utiliza para obtener el valor de un atributo",
+    respuesta: "getAttribute",
+    distractores: ["removeAttribute", "deleteAttribute", "changeAttribute"],
+  },
 ];
