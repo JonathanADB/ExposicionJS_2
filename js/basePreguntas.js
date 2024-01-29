@@ -24,14 +24,14 @@ let baseDePreguntas = [
       
 
   {
-    pregunta: "Seleccionar un elemento y cambiar su contenido:",
-    ayuda: "Es lo mismo que 2+2",
-    respuesta: "4",
-    distractores: ["2", "1", "3"],
+    pregunta: "¿Para que sirve add en classlist?",
+    ayuda: "mismo significado",
+    respuesta: "añadir",
+    distractores: ["quitar", "remover", "montar"],
   },
   {
-    pregunta: "¿Cuanto es 5+5?",
-    respuesta: "10",
-    distractores: ["25", "9", "5"],
+    pregunta: "¿Para que sirver .TextContent?",
+    respuesta: "nos devuelve el contenido de texto de un elemento HTML",
+    distractores: ["Añade lo que quieras", "Omite el texto correspondiente", "Modifica el texto seleccionado"],
   },
 ];
