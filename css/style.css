@@ -116,3 +116,54 @@ footer.footer .social-link {
 footer.footer .social-link:hover{
     background-color: rgba(20,20,20, .5);
 }
+
+
+
+
+/* ---Ana--- */
+.ana {
+    margin-top: 3rem;
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    height: auto;
+    margin-bottom: 3rem;
+}
+.anasintax {
+    background-color: rgb(100, 241, 194);
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,1fr);
+    column-gap: 5rem;
+    row-gap: 3rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+.sintaxis {
+    grid-column: 1/3;
+    margin-top: 3rem;
+    margin-left: 15rem;
+    margin-right: 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sintaxis h1 {
+    font-size: 4rem;
+    font-weight: bolder;
+}
+.sintaxis, .notacion, .typeof, .concatenacion, .escape{
+    background-color: antiquewhite;
+    border: 0.3rem solid black;
+    border-radius: 1rem;
+}
+.concatenacion,.escape {
+    margin-bottom: 3rem;
+}
+
+
+
+
+
+/* ---Ana- conclucion-- */
