@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+/*linea css original 19*/
+
+:root{
+    --primary-font-color1: #ffffff; 
+    --primary-font-color2: #007bff;
+    --primary-font-color3: red;
+}
+.background-mainjhonny{
+    height: 100vh;
+    background: linear-gradient(rgba(20,20,20, .5),rgba(20,20,20, .5)),url(./img/concepto-recursos-humanos-mano_23-2150389097.gpg);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 89%, 51% 100%, 0 89%);
+    clip-path: polygon(0 0, 100% 0, 100% 89%, 51% 100%, 0 89%);
+
+}
+
+.background-mainjhonny, .services-class{
+    max-width: 100%;
+    background-position: center center;
+    background-repeat:  no-repeat;
+    background-attachment: fixed;
+    background-size:  cover;
+    color:var(--primary-font-color1);
+}
+
+.background-mainjhonny h1{
+    font-size: 5.5rem;
+}
+
+.background-mainjhonny .main { 
+    display: table; 
+    width: 100%;
+    height: 82vh;
+    text-align: center;
+    /*
+    display: flex; 
+    width: 50%; 
+    height: 200px; 
+    margin: auto; 
+    */
+} 
+
+.background-mainjhonny .main .main-title,.background-mainjhonny .main p { 
+    display: table-cell;
+    vertical-align: middle;
+    /*margin: auto;  Important 
+    text-align: center;  */
+}
+
+.main-link{
+    font-size: 44px;
+    color: var(--primary-font-color1);
+}
+.main-link:hover{
+    color:var(--primary-font-color3);
+}
+.typewrite
+{
+    color: rgb(171, 232, 208);
+}
+   
+/**********************************************************************************************************************/      
+.miMain{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.intro{ 
+    
+    background-color: bisque; 
+    font-size: large;
+    width: 90%;
+}
+/****************************************************/
+#acceso { 
+   margin-top: 5rem;
+    background-color: #F7F7F7;
+    box-shadow: 0rem -0.1rem 0rem rgb(233, 228, 228);
+    max-width: 90%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo_porfolio{ 
+    
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 5rem;
+}
+
+.h2_titulo{font-size: 1.2rem;
+}
+
+.linea_porfolio{opacity: 20%;}
+/*************************************css para la linea y tutulo, ademas de sombreado*/
+
+.lbotones {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+#byid{ 
+   margin-top: 5rem;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.encabezadoarticulos{
+    color: rgb(122, 122, 217);
+    font-size: 2rem;
+    
+}
+ 
+
+    
+
+#miElemento { 
+  
+    background-color: #908383;
+    min-width: 100%;
+
+}
+
+.contenedor1{
+    gap: 3rem;
+    margin-top: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.pcontenedor1 {
+   
+    max-width: 30%;
+}
+.ejemplocodigobyid {
+    color: #ffffff;
+    max-width: 60%;
+    background-color: black;
+}
+
+.codigo {
+    color: red;
+}
+
+/*****************aqui empieza bytagname***********/
+
+#bytagname {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ejemplocodigobytagname {
+    border: 0.5rem solid red;
+   min-width: 100%;
+    background-color: #908383;
+}
+
+/****************aqui empieza selecto//////////////////r*/
+
+#selector {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ejemploAll{
+   
+    background-color: #908383;
+    margin-top: 10rem;
+    font-size: 2.5rem;
+    max-height: 8rem;
+}
+
+.frame{
+    margin-left: 30rem;
+}
+

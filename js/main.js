@@ -3,7 +3,7 @@ $(function(){
     $('a[href*=#]').click(function() {
         if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
         && location.hostname == this.hostname) {
-            var $target = $(this.hash);
+            let $target = $(this.hash);
             $target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
             if ($target.length) {
                 var targetOffset = $target.offset().top;
@@ -13,7 +13,7 @@ $(function(){
         }
     });
 });
-var TxtType = function(el, toRotate, period) {
+let TxtType = function(el, toRotate, period) {
     this.toRotate = toRotate;
     this.el = el;
     this.loopNum = 0;
@@ -24,8 +24,8 @@ var TxtType = function(el, toRotate, period) {
 };
 
 TxtType.prototype.tick = function() {
-    var i = this.loopNum % this.toRotate.length;
-    var fullTxt = this.toRotate[i];
+    let i = this.loopNum % this.toRotate.length;
+    let fullTxt = this.toRotate[i];
 
     if (this.isDeleting) {
         this.txt = fullTxt.substring(0, this.txt.length - 1);
@@ -35,8 +35,8 @@ TxtType.prototype.tick = function() {
 
     this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
 
-    var that = this;
-    var delta = 200 - Math.random() * 100;
+    let that = this;
+    let delta = 200 - Math.random() * 100;
 
     if (this.isDeleting) { delta /= 2; }
 
@@ -55,16 +55,16 @@ TxtType.prototype.tick = function() {
 };
 
 window.onload = function() {
-    var elements = document.getElementsByClassName('typewrite');
-    for (var i = 0; i < elements.length; i++) {
-        var toRotate = elements[i].getAttribute('data-type');
-        var period = elements[i].getAttribute('data-period');
+    let elements = document.getElementsByClassName('typewrite');
+    for (let i = 0; i < elements.length; i++) {
+        let toRotate = elements[i].getAttribute('data-type');
+        let period = elements[i].getAttribute('data-period');
         if (toRotate) {
             new TxtType(elements[i], JSON.parse(toRotate), period);
         }
     }
     // INJECT CSS
-    var css = document.createElement("style");
+    let css = document.createElement("style");
     css.type = "text/css";
     css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
     document.body.appendChild(css);
