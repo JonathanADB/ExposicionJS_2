@@ -34,4 +34,9 @@ let baseDePreguntas = [
     respuesta: "10",
     distractores: ["25", "9", "5"],
   },
+  {
+    pregunta: "¿Cual metodo se utiliza para obtener el valor de un atributo",
+    respuesta: "getAttribute",
+    distractores: ["removeAttribute", "deleteAttribute", "changeAttribute"],
+  },
 ];
