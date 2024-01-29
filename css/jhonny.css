@@ -136,6 +136,7 @@
 }
 
 .contenedor1{
+   
     gap: 3rem;
     margin-top: 5rem;
     display: flex;
@@ -143,7 +144,7 @@
 }
 
 .pcontenedor1 {
-   
+  
     max-width: 30%;
 }
 .ejemplocodigobyid {
@@ -192,3 +193,11 @@
     margin-left: 30rem;
 }
 
+#Métodosdemanipulación { 
+    margin-top: 5rem;
+    background-color: #F7F7F7;
+    box-shadow: 0rem -0.1rem 0rem rgb(233, 228, 228);
+    max-width: 90%;
+    flex-direction: column;
+    align-items: center;
+}
