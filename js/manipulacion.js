@@ -19,6 +19,8 @@ boton.addEventListener('click', function() {
 
 
 //segundo ejemplo
+
+
 // Acceder al contenedor por su ID
 let contenedor = document.getElementById('contenedor');
 
@@ -65,3 +67,5 @@ eliminarBoton.addEventListener('click', function() {
   let claseActual = parrafo.getAttribute('class');
   console.log('Clase actual del párrafo:', claseActual);
 });
+
+
