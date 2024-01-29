@@ -145,8 +145,11 @@ footer.footer .social-link:hover{
     margin-top: 3rem;
     margin-left: 15rem;
     margin-right: 15rem;
+    height: 40rem;
+    
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
 }
 .sintaxis h1 {
@@ -157,9 +160,22 @@ footer.footer .social-link:hover{
     background-color: antiquewhite;
     border: 0.3rem solid black;
     border-radius: 1rem;
+    padding: 2rem;
+    
+
 }
 .concatenacion,.escape {
     margin-bottom: 3rem;
+}
+.notacion h3, .typeof h3, .concatenacion h3, .escape h3 {
+    font-size: 2rem;
+    font-weight: bold;
+   
+    margin-bottom: 2rem;
+}
+
+.notacion p, .typeof p, .concatenacion p, .escape p {
+    font-size: 1.5rem;
 }
 
 
