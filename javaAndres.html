@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplos DOM Atributos y CSS</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/jhonny.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script defer src="js/jhonny.js" ></script>
+    
+    <title>Metodos de seleccion de elementos</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script  src="js/main.js"></script>
+
+    
+    <style>
+/*             #myElement {
+            color: blue;
+            font-size: 16px;
+        }
+
+
+        #highlighted {
+            background-color: yellow;
+        } */ 
+
+        #exampleElement {
+            width: 50%;
+            border: 2px solid blue;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        
+    </style>
+    
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+        <div class="container">
+                    <a class="navbar-brand js-scroll-trigger" href="#page-top">inicio</a>
+                    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    
+                  
+                        <a href="index.html"> Home</a>
+                    
+        </div>
+    </nav>
+
+    <div class="atributos_dom" style="margin-top: 5rem;">
+
+        <div>
+            <h2>DOM-Atributos cambios y modificaciones</h2>
+        </div>
+
+        <p>En JavaScript, los atributos DOM (Document Object Model) son
+            propiedades de elementos HTML a los que se puede
+            acceder y manipular usando JavaScript.</p>
+        <p>Los atributos en el DOM se pueden clasificar ampliamente en dos
+            tipos</p>
+
+
+        <ul>
+            <h3>Atributos estándar</h3>
+            <li>Los atributos estándar son atributos predefinidos que son
+                comunes a la mayoría de los elementos HTML</li>
+            <li>Ejemplos incluyen id, class, style, src, href, etc</li>
+            <li>Proporcionan información adicional o ajustes para el elemento HTML
+                correspondiente.</li>
+            <h3>Atributos no estándar</h3>
+            <li>A menudo se utilizan para almacenar datos
+                o información adicional relacionada con un elemento,
+                y su comportamiento es definido por el desarrollador</li>
+            <li> son atributos definidos por el usuario que no forman parte del
+                estándar HTML</li>
+        </ul>
+
+        <p>Todos los atributos son accesibles usando los siguientes métodos:</p>
+        <ul>
+            <li>elem.hasAttribute(nombre) -- comprueba si existe.</li>
+            <li>elem.getAttribute(nombre) -- obtiene el valor.</li>
+            <li>elem.setAttribute(nombre) -- establece el valor.</li>
+            <li>elem.removeAttribute(nombre) -- elimina el atributo.</li>
+        </ul>
+
+
+    </div>
+
+    <div class="Ejemplos_atributos">
+
+        <div class="Atributos_ejemplo_1">
+
+            <div>
+                <h2>Ejemplo 1 Dom Atributos</h2>
+            </div>
+
+            <h2>Acceder y modificar el atributo 'src' de una imagen</h2>
+
+            <img id="myImage" src="original.jpg" alt="Original Image">
+            <button onclick="changeImageSource()">Cambia el origen de la imagen</button>
+
+            <script>
+                function changeImageSource() {
+                    // Aqui se accede a el elemento de la imagen
+                    let imageElement = document.getElementById("myImage");
+
+                    // Se accede y se muestra el atributo actual de src
+                    let currentSrc = imageElement.getAttribute("src");
+                    console.log("Current src attribute:", currentSrc);
+
+                    // Modifica el atributo src
+                    imageElement.setAttribute("src", "newImage.jpg");
+
+                    // Muestra la vercion actualizada de el src atributo
+                    let updatedSrc = imageElement.getAttribute("src");
+                    console.log("Updated src attribute:", updatedSrc);
+                }
+            </script>
+            <div>
+                <ul>
+                    <h3>En este ejemplo:</h3>
+                    <li>Tenemos una imagen con el src inicial de original.jpg </li>
+                    <li>Cuande se hace un click al boton, se llama la funcion `changeImageSource`</li>
+                    <li>La funcion accede a el elemento de la imagen, muestra el actual `src` atributo, y luego
+                        actualiza el
+                        atributo`src` con `newImage.jpg`</li>
+                </ul>
+            </div>
+            <br><br>
+
+        </div>
+
+        <!--     Ejemplo 2    -->
+
+        <div class="atributos_ejemplo_2">
+
+            <div>
+                <h2>Ejemplo 2 DOM Atributos</h2>
+            </div>
+
+            <h2>Ejemplo de una lista Dinamica</h2>
+
+            <ul id="myList">
+                <li>Articulo 1</li>
+                <li>Articulo 2</li>
+                <li>Articulo 3</li>
+            </ul>
+
+            <button onclick="addItem()">Añadir artículo</button>
+            <button onclick="removeItem()">Borrar artículo</button>
+
+            <script>
+                function addItem() {
+                    // Acceso al elemento de UL
+                    let listElement = document.getElementById("myList");
+
+                    // Creación de un nuevo elemento de la lista
+                    let newItem = document.createElement("li");
+                    newItem.textContent = "New Item";
+
+                    // Añadir el nuevo elemento a la lista
+                    listElement.appendChild(newItem);
+                }
+
+                function removeItem() {
+                    // Acceso al elemento de UL
+                    let listElement = document.getElementById("myList");
+
+                    // Comprobar si hay elementos para eliminar
+                    if (listElement.children.length > 0) {
+                        // Eliminar el último elemento de la lista
+                        listElement.removeChild(listElement.lastElementChild);
+                    }
+                }
+            </script>
+            <div>
+                <ul>
+                    <h3>En este ejemplo:</h3>
+                    <li>Tenemos un `ul` con tres items</li>
+                    <li>Hay dos botones: uno para 'Añadir artículo' y otro para 'Borrar artículo'</li>
+                    <li>Haciendo click en el boton de 'añadir artículo' desencadena la funcion de 'addItem' la cual crea
+                        un
+                        nuevo item y lo añade a la lista</li>
+                    <li>Haciendo click en el boton de 'Borrar articulo' desencadena la funcion 'removeItem' la cual
+                        borra el
+                        ultimo item de la lista</li>
+                    <p>Este ejemplo demuestra como JavaScript puede ser utilizado para modificar dinamicamente el
+                        contenido
+                        de HTML, basandose en las interacciones del usuario.</p>
+                </ul>
+            </div>
+            <br><br>
+        </div>
+    </div>
+
+    <div class="css_dom">
+        <div>
+            <h2>DOM-CSS Cambios y modificaciones</h2>
+        </div>
+
+        <p>Mientras que el CSS en sí no se manipula directamente usando
+            JavaScript, el Document Object Model (DOM) se puede usar para
+            interactuar y modificar las propiedades CSS dinámicamente.
+        </p>
+        <p>Aquí hay una breve descripción de cómo se puede trabajar con
+            CSS en el DOM usando JavaScript
+        </p>
+
+        <div class="descripción">
+
+            <div>
+                <h2>1. Acceso a elementos</h2>
+
+                <p>Puede usar JavaScript para acceder a elementos HTML en el DOM.
+                    Esto se suele hacer utilizando métodos como:</p>
+                <ul>
+                    <li>`getElementById`</li>
+                    <li>`getElementsByClassName`</li>
+                    <li>`getElementsByTagName`</li>
+                    <li>`querySelector`</li>
+                </ul>
+            </div>
+
+            <div>
+                <h2>2. Modificar propiedades CSS</h2>
+                <p>Una vez que tenga una referencia a un elemento HTML, puede
+                    modificar sus propiedades CSS usando la propiedad:</p>
+                <ul>
+                    <li>`style`</li>
+                </ul>
+            </div>
+
+            <div>
+                <h2>3. Añadir/eliminar clases en CSS</h2>
+
+                <p>También se puede agregar o quitar clases CSS desde
+                    un elemento usando el:</p>
+                <ul>
+                    <li>`classList`</li>
+                </ul>
+            </div>
+
+            <div>
+                <h2>4. Configuración de texto en CSS</h2>
+                <p>Si deseas configurar varias propiedades CSS a la vez,
+                    puedes utilizar el:
+                </p>
+                <ul>
+                    <li>`cssText`</li>
+                </ul>
+            </div>
+
+            <div>
+                <h2>5. obtener Computed Styles</h2>
+                <p>Puede recuperar los estilos computados de un
+                    elemento usando el método:</p>
+                <ul>
+                    <li>`getComputedStyle`</li>
+                </ul>
+            </div>
+
+            <div>
+                <h2>6. Manejo de eventos</h2>
+                <p>Puedes usar JavaScript para cambiar dinámicamente los
+                    estilos en respuesta a las acciones del usuario u otros
+                    eventos
+                </p>
+            </div>
+
+
+
+        </div>
+
+        <div class="ejemplos_css">
+
+            <div class="ejemplo_css_1">
+                <div>
+                    <h2>Ejemplo 1 CSS </h2>
+                </div>
+
+                <h2>Ejemplo cssText</h2>
+
+                <div>
+                    <!-- <div id="myElement">Este es un texto azul con un tamaño de 16px</div> -->
+                    <button onclick="changeStyles()">Cambia de Estilos</button>
+
+                    <script>
+                        function changeStyles() {
+                            var element = document.getElementById("myElement");
+
+                            // Modifica los estilos utilizando cssText
+                            element.style.cssText = "color: red; font-size: 20px;";
+                        }
+                    </script>
+
+                </div>
+                <ul>
+                    <h3>En este ejemplo:</h3>
+                    <li>El estilo inicial `myElement` esta definido en CSS</li>
+                    <li>Hay un botón etiquetado "Cambiar estilos."</li>
+                    <li>Al hacer clic en el botón "Cambiar estilos" se activa la
+                        función `changeStyles` de JavaScript.</li>
+                    <li>Dentro de la función, cssText se usa para establecer
+                        dinámicamente los estilos del elemento en texto rojo con
+                        un tamaño de fuente de 20 píxeles.</li>
+                </ul>
+
+
+
+            </div>
+
+            <div class="ejemplo_css_2">
+                <div>
+                    <h2>Ejemplo 2 CSS</h2>
+                </div>
+
+                <h2> </h2>
+
+
+                <div id="myElement">This is a div.</div>
+                <button onclick="toggleHighlight()">Alternar resaltado</button>
+
+                <script>
+                    function toggleHighlight() {
+                        var element = document.getElementById("myElement");
+
+                        // Toggle the 'highlighted' class
+                        element.classList.toggle("highlighted");
+                    }
+                </script>
+
+                <div>
+                    <h3>En este ejemplo:</h3>
+                    <ul>
+                        <li>El estilo inicial para la clase .highlighted establece
+                            un color de fondo amarillo.
+                        </li>
+                        <li>Hay un botón etiquetado "Alternar resaltado"</li>
+                        <li>Al hacer clic en el botón "Alternar resaltado" se aciva la
+                            funcion de JavaScript "toggleHighlight"
+                        </li>
+                        <li>Inside the function, classList.toggle is used to toggle
+                            the presence of the highlighted class on the element.</li>
+                    </ul>
+                    <div>
+                        <p>As a result, clicking the button will toggle the background color
+                            of the myElement between yellow and its default background color.
+                            The classList API makes it easy to add, remove, or toggle classes
+                            on an element, allowing for dynamic changes in styling.</p>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+
+        <div>
+
+            <div class="ejemplo_css_3">
+                <div>
+                    <h2>Ejemplo 3 CSS</h2>
+                </div>
+
+
+                <div id="exampleElement">Ejemplo de ancho dinámico</div>
+
+                <script>
+                    // Obtener el elemento
+                    var element = document.getElementById("exampleElement");
+
+                    // Obtener el computed style
+                    var computedStyle = window.getComputedStyle(element);
+
+                    // Acceder y modificar una propiedad de estilo específica (por ejemplo, ancho)
+                    var currentWidth = parseFloat(computedStyle.width); // Extraer valor numérico, ignorando "px"
+                    var newWidth = currentWidth * 1.5; // Aumentar el ancho en ...
+
+                    // Aplicar el nuevo ancho
+                    element.style.width = newWidth + "px";
+                </script>
+
+                <div>
+                    <h3>En este ejemplo:</h3>
+                    <ul>
+                        <li>
+                            El elemento HTML con el ID "exampleElement" 
+                            tiene inicialmente un ancho del 50%, como se define
+                             en la hoja de estilo.
+                        </li>
+                        <li>El código JavaScript usa getComputedStyle para recuperar el 
+                            estilo calculado actual del elemento.</li>
+                        <li>Luego extrae el valor numérico del ancho actual, lo multiplica 
+                            por 1,5 para aumentarlo en un 50% y aplica el nuevo ancho al 
+                            elemento usando element.style.width.
+                        </li>
+                    <div>
+                        <p>Esto demuestra cómo se puede utilizar getComputedStyle
+                             para manipular dinámicamente el estilo de un elemento en 
+                             función de sus valores calculados actuales.</p>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+</body>
+
+</html>

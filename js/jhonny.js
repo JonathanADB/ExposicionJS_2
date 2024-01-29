@@ -15,9 +15,7 @@ elemento.innerHTML = "¡Hola, mundo!"; */
 
 /*   
 
-Es importante mencionar que getElementsByTagName devuelve todos los elementos con el nombre de la etiqueta especificada, 
-en el orden en que aparecen en el documento. Si no hay elementos con esa etiqueta, la función devuelve una colección vacía.
-Aquí hay un ejemplo de cómo puedes verificar si hay elementos antes de realizar operaciones:
+
 
 let parrafos = document.getElementsByTagName("p");
 
