@@ -20,7 +20,7 @@ boton.addEventListener('click', function() {
 
 //segundo ejemplo
 
-
+//En este ejemplo, al hacer clic en el botón "Agregar Elemento", se crea un nuevo elemento div con una clase y contenido, y se agrega como hijo del contenedor. Al hacer clic en el botón "Eliminar Elemento", se elimina el último elemento hijo del contenedor. Además, al hacer clic en el párrafo, se cambia su clase y al hacer clic en el botón "Eliminar Elemento", se muestra la clase actual del párrafo en la consola.
 // Acceder al contenedor por su ID
 let contenedor = document.getElementById('contenedor');
 
