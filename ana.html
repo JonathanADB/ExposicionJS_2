@@ -1,110 +1,187 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        
+        
+    <title> Grupo A DOM</title>
+        
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</head>    
 <body>
-    <h2 class="sintaxis">Sintaxis</h2>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">DOM</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#about">Proyecto</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#services">Contenido</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#portfolio">Desarrolladores</a>
+                    </li>
+                   
+                </ul>
+            </div>
+        </div>
+    </nav>
     <br>
-    <h3 class="notacionpunto">Notación punto</h3>
-    <br>
-    <p class="notacion">
-      En JavaScript, la notación de punto se utiliza para 
-      acceder a las propiedades de un objeto y para llamar 
-      a métodos. Aquí hay ejemplos:
-    </p>
-    <br>
-    <h5 class="uno">Acceder a Propiedades:</h5>
-    <script>
-        let persona = {
-          nombre: "Aitor",
-          edad: 25
-        };
-      
-        console.log(persona.nombre);
-    </script>
-    <br>
-    <h5 class="dos">Llamar a Métodos:</h5>
-    <script>
-        let mensaje = "Hola, Mundo";
+    <main class="ana">
+        <section class="anasintax">
+            <div class="sintaxis">
+                <h1>Sintaxis</h1>
+            </div>
+            <div class="notacion">
+                <h3>Notación punto</h3>
+                <p>
+                    En JavaScript, la notación de punto se utiliza para 
+                    acceder a las propiedades de un objeto y para llamar 
+                    a métodos. Aquí hay ejemplos:
+                </p>
+                  
+                <h5>Acceder a Propiedades:</h5>
+                <script>
+                      let persona = {
+                        nombre: "Aitor",
+                        edad: 25
+                      };
+                    
+                      console.log(persona.nombre);
+                </script>
+                  
+                <h5>Llamar a Métodos:</h5>
+                <script>
+                      let mensaje = "Hola, Mundo";
+              
+                      console.log(mensaje.length); 
+                </script>
+            </div>
 
-        console.log(mensaje.length); 
-    </script>
-    <br>
-    <h3 class="typeof">Typeof</h3>
-    <br>
-    <p class="tres">
-        El operador typeof se utiliza para obtener el 
-        tipo de un valor en JavaScript. Aquí tienes ejemplos:
-    </p>
-    <br>
-    <script>
-        let x = 10;
-        let y = "Hola, Mundo";
+            <div class="typeof">
+                <h3>Typeof</h3>
+                <p>
+                    El operador typeof se utiliza para obtener el 
+                    tipo de un valor en JavaScript. Aquí tienes ejemplos:
+                </p>
+  
+                <script>
+                    let x = 10;
+                    let y = "Hola, Mundo";
+                
+                    console.log(typeof x); // Devuelve "number"
+                    console.log(typeof y); // Devuelve "string"
+                </script>
+            </div>
+
+            <div class="concatenacion">
+                <h3>Plantillas Literales vs Concatenación:</h3>
+                
+                <h4>Ejemplos:</h4>
+                
+                <script>
+                    let nombre = "Juan";
+                    let edad = 30;
+                  
+                    // Concatenación
+                    let mensajeConcat = "Hola, me llamo " + nombre + " y tengo " + edad + " años.";
+                    console.log(mensajeConcat);
+                  
+                    // Plantillas Literales
+                    let mensajeLiteral = `Hola, me llamo ${nombre} y tengo ${edad} años.`;
+                    console.log(mensajeLiteral);
+                  </script>
+                <br>
+                <p>“Las plantillas literales (template literals) 
+                    permiten incrustar expresiones dentro de cadenas 
+                    de una manera más legible y con un formato más limpio.</p>
+            </div>
+
+            <div class="escape">
+                <h3>Caracteres de Escape:</h3>
+   
+                <p>Los caracteres de escape se utilizan para r
+                   epresentar caracteres especiales en una cadena. 
+                   Algunos ejemplos comunes son:
+                </p>
     
-        console.log(typeof x); // Devuelve "number"
-        console.log(typeof y); // Devuelve "string"
-    </script>
-    <br>
-    <h3 class="concatenación">Plantillas Literales vs Concatenación:</h3>
-    <br>
-    <h4 class="ejemplo">Ejemplos:</h4>
-    <br>
-    <script>
-        let nombre = "Juan";
-        let edad = 30;
-      
-        // Concatenación
-        let mensajeConcat = "Hola, me llamo " + nombre + " y tengo " + edad + " años.";
-        console.log(mensajeConcat);
-      
-        // Plantillas Literales
-        let mensajeLiteral = `Hola, me llamo ${nombre} y tengo ${edad} años.`;
-        console.log(mensajeLiteral);
-      </script>
-    <br>
-    <p class="cuatro">“Las plantillas literales (template literals) 
-        permiten incrustar expresiones dentro de cadenas 
-        de una manera más legible y con un formato más limpio.</p>
-    <br>
-    <h3 class="escape">Caracteres de Escape:</h3>
-    <br>
-    <p class="cinco">Los caracteres de escape se utilizan para r
-        epresentar caracteres especiales en una cadena. 
-        Algunos ejemplos comunes son:
-    </p>
-    <br>
-    <h4 class="nueva_linea">Nueva línea:</h4>
-    <br>
-    <script>
-        let multilinea = "Hola,\nMundo!";
-         console.log(multilinea);
-    </script>
-    <br>
-    <h4 class="tabulación:">Tabulación:</h4>
-    <br>
-    <script>
-        let conTabulacion = "Texto con\ttabulación.";
-         console.log(conTabulacion);
-    </script>
-    <br>
-     <h4 class="comiias">Comillas dentro de una cadena:</h4>
-     <br>
-     <script>
-        let conComillas = 'Texto con comillas simples (\') y comillas dobles (").';
-         console.log(conComillas);
-     </script>
-     <br>
-     <h4 class="barra">Barra invertida literal (\):</h4>
-     <br>
-     <script>
-        let conBarraInvertida = "C:\\Directorio\\Archivo.txt";
-        console.log(conBarraInvertida);
-     </script>
+                <h4>Nueva línea:</h4>
+  
+                <script>
+                   let multilinea = "Hola,\nMundo!";
+                   console.log(multilinea);
+                </script>
+    
+                <h4>Tabulación:</h4>
+   
+                <script>
+                    let conTabulacion = "Texto con\ttabulación.";
+                    console.log(conTabulacion);
+                </script>
+  
+                <h4>Comillas dentro de una cadena:</h4>
+     
+                <script>
+                    let conComillas = 'Texto con comillas simples (\') y comillas dobles (").';
+                    console.log(conComillas);
+                </script>
+    
+                <h4>Barra invertida literal (\):</h4>
+     
+                <script>
+                    let conBarraInvertida = "C:\\Directorio\\Archivo.txt";
+                    console.log(conBarraInvertida);
+                </script>
+            </div>
+        </section>
+    </main>
+    
 
 
+
+
+     <footer class="footer text-center">
+        <div class="container">
+            <ul class="list-inline mb-5">
+                <li class="list-inline-item">
+                    <a class="social-link rounded-circle text-white mr-3" href="#">
+                    <i class="fab fa-facebook-f"></i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="social-link rounded-circle text-white mr-3" href="#">
+                    <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="social-link rounded-circle text-white" href="#">
+                    <i class="fab fa-github"></i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="social-link rounded-circle text-white" href="#">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+            </ul>
+            <p class="text-muted small mb-0">Copyright &copy; Your Website 2018</p>
+        </div>
+    </footer>
+    <br>
 
 </body>
 </html>
